@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="SGI서울보증"> 
+    <meta property="og:image" content="https://i.ibb.co/GkcG4Ft/meta.png">
+    <meta property="og:description" content="SGI서울보증">
+    <link rel="icon" href="images/favicon.png">
+    <title>SGI서울보증</title>
+    <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+    <div class="mobile-container">
+
+    <!-- 로고 컨테이너 -->
+    <header id="header">
+        <a href="index.html">
+            <img src="images/SGI_CI_white.png" alt="로고" class="logo">
+        </a>
+        <a href="index.html" class="right-icon">
+            <img src="images/ico_home.png" alt="홈 아이콘" class="logo">
+        </a>
+    </header>
+
+<!-- 슬라이드 배너 -->
+<div class="banner-wrapper">
+    <div class="banner-container">
+        <!-- 배경색 레이어 -->
+        <div class="banner-bg"></div>
+        <!-- 텍스트 -->
+        <div class="banner-content fade">
+            <div class="banner-text">텍스트 1</div>
+        </div>
+    </div>
+    <!-- 이미지 -->
+    <img src="images/slide1.png" alt="Slide 1" class="banner-img">
+</div>
+
+<!-- 로그인 컨테이너 -->
+<div class="login-container">
+    <p class="login-text"><span style='font-weight:600;'>로그인 후 모든 서비스를</span> 이용해보세요!</p>
+    <div class="button-group">
+        <a href="login.html" class="btn primary-btn">
+            <img src="images/ico_user.png" alt="개인회원 아이콘" class="btn-icon"> 개인회원
+        </a>
+        <a href="login_legal.html" class="btn secondary-btn">
+            <img src="images/ico_company.png" alt="법인회원 아이콘" class="btn-icon"> 법인회원
+        </a>
+    </div>
+</div>
+
+<!-- 아래 삐져나오는 컨테이너 -->
+<div class="sub-container">
+    <p>증권정보만으로 이용 가능해요.</p>
+    <div class="link-group">
+        <a href="privacypolicy.html">개인정보동의 ›</a>
+        <a href="login.html">보유주수 확인하기 ›</a>
+    </div>
+</div>
+
+<!-- 가로줄 -->
+<div class="horizontal-line"></div>
+
+<!-- 메뉴 컨테이너 -->
+<div class="menu-container">
+    <p class="menu-title">자주 찾는 서비스</p>
+    <div class="menu-items">
+        <!-- 첫 번째 줄의 동그라미들 -->
+        <a href="login.html" class="menu-item">
+            <div class="menu-circle">
+                <img src="images/service_1.png" alt="서비스 1" class="menu-icon">
+            </div>
+            <p class="menu-description">개인회원 확인</p>
+        </a>
+        <a href="login_legal.html" class="menu-item">
+            <div class="menu-circle">
+                <img src="images/service_2.png" alt="서비스 2" class="menu-icon">
+            </div>
+            <p class="menu-description">법인회원 확인</p>
+        </a>
+        <a href="company.html" class="menu-item">
+            <div class="menu-circle">
+                <img src="images/service_3.png" alt="서비스 3" class="menu-icon">
+            </div>
+            <p class="menu-description">회사 소개</p>
+        </a>
+    </div>
+    <div class="menu-items">
+        <!-- 두 번째 줄의 동그라미들 -->
+        <a href="privacypolicy.html" class="menu-item">
+            <div class="menu-circle">
+                <img src="images/service_4.png" alt="서비스 4" class="menu-icon">
+            </div>
+            <p class="menu-description">이용약관</p>
+        </a>
+        <a href="javascript:void(0);" class="menu-item" onclick="showUnderConstruction()">
+            <div class="menu-circle">
+                <img src="images/service_5.png" alt="서비스 5" class="menu-icon">
+            </div>
+            <p class="menu-description">가이드북 보기</p>
+        </a>
+        <a href="index.html" class="menu-item">
+            <div class="menu-circle">
+                <img src="images/service_6.png" alt="서비스 6" class="menu-icon">
+            </div>
+            <p class="menu-description">홈 화면으로</p>
+        </a>
+    </div>
+</div>
+
+<!-- 준비중 팝업 -->
+<div id="underConstructionPopup" class="popup">
+    <div class="popup-content">
+        <p>현재 준비 중입니다.<br>
+        <span style="font-size: 14px; color: #535353;">(담당 : SGI서울보증 경영기획부)</span></p>
+        <button onclick="closePopup()">닫기</button>
+    </div>
+</div>
+
+<!-- 가로줄 -->
+<div class="horizontal-line"></div>
+
+<!-- 뉴스 컨테이너 -->
+<div class="news-container">
+    <div class="news-header">
+        <!-- 첫 번째 이미지와 텍스트 -->
+        <img src="images/ico_notice.png" alt="새 소식" class="news-icon">
+        <span class="news-text">SGI서울보증의 새 소식이에요.</span>
+        <!-- 두 번째 이미지 -->
+        <img src="images/btn_arrow.png" alt="아이콘2" class="news-icon2">
+    </div>
+<!-- 하나의 긴 네모 칸 -->
+<div class="news-box">
+    <div class="news-list">
+        <div class="news-item">
+            <a href="https://www.fntimes.com/html/view.php?ud=2025021918571235258a55064dd1_18" target="_blank">
+                [IPO기사]<span style="font-weight: 400; color: #000000;"> 공모가 낮추고 배당 강화…이명순 SGI서울보증 대표 "예보 주가 영향 고려 매각 시점 결정"</span>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="https://www.lcnews.co.kr/news/articleView.html?idxno=94833" target="_blank">
+                [경제]<span style="font-weight: 400; color: #000000;"> 서울보증보험, 기자간담회 통해 중장기 성장전략 발표</span>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218000822" target="_blank">
+                [IR]<span style="font-weight: 400; color: #000000;"> [기재정정]증권신고서(지분증권)</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 푸터 시작 -->
+<footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <p class="footer-address">서울시 종로구 김상옥로 29 서울보증보험(주)</p>
+        <p class="footer-ceo">대표이사 <span style="font-weight: 600;">이명순</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;사업자번호 <span style="font-weight: 600;">120-81-13002</span></p>
+        <p class="footer-eng">© Seoul Guarantee Insurance. All rights reserved.</p>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-icons">
+            <a href="https://www.youtube.com/c/sgictube" class="footer-icon" target="_blank">
+              <img src="images/sns_youtube.png" alt="Youtube">
+            </a>
+            <a href="https://www.instagram.com/sgic_official/#" class="footer-icon" target="_blank">
+              <img src="images/sns_instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/sgic.co.kr" class="footer-icon" target="_blank">
+              <img src="images/sns_facebook.png" alt="Facebook">
+            </a>
+          </div>
+        <div class="footer-image-wrapper">
+          <img src="images/web_acc.png" alt="Footer Image" class="footer-image">
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- 푸터 끝 -->
+
+    <script src="script.js"></script>
+
+    </body>
+    </html>

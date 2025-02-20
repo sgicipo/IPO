@@ -1,0 +1,19 @@
+{
+    "users": [
+      {
+        "name": "1",
+        "combo": "== 선택 ==",
+        "account": "1",
+        "stockPrice": 31800,
+        "sharesOwned": 1000
+      },
+      {
+        "name": "2",
+        "combo": "키움증권",
+        "account": "1234",
+        "stockPrice": 60000,
+        "sharesOwned": 30200
+      }
+    ]
+  }
+  

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="SGI서울보증"> 
+    <meta property="og:image" content="https://i.ibb.co/GkcG4Ft/meta.png">
+    <meta property="og:description" content="SGI서울보증">
+    <link rel="icon" href="images/favicon.png">
+    <title>개인회원 로그인 | SGI서울보증</title>
+    <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+    <div class="mobile-container">
+
+        <!-- 컴패니 헤더 시작 -->
+        <header class="company-header">
+            <div class="header-left">
+                <a href="index.html" class="back-button">
+                    <img src="images/gnb_btn_prev.png" alt="뒤로가기">
+                </a>
+            </div>
+            <div class="header-center">
+                <p class="header-text">로그인</p>
+            </div>
+            <div class="header-right">
+                <a href="index.html" class="home-button">
+                    <img src="images/ico_home_grey.png" alt="홈">
+                </a>
+            </div>
+        </header>
+        <!-- 컴패니 헤더 끝 -->
+
+        <section class="login-box">
+            <h2 class="login-title">개인회원 로그인</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">성함</label>
+                    <input type="text" id="username" name="username" placeholder="이름을 입력하세요">
+                </div>
+        
+                <div class="input-group">
+                    <label for="broker">증권사 선택</label>
+                    <select id="broker" name="broker">
+                        <option value="== 선택 ==">== 선택 ==</option>
+                        <option value="토스증권">토스증권</option>
+                        <option value="카카오페이증권">카카오페이증권</option>
+                        <option value="미래에셋증권">미래에셋증권</option>
+                        <option value="키움증권">키움증권</option>
+                        <option value="한국투자증권">한국투자증권</option>
+                        <option value="신한투자증권">신한투자증권</option>
+                        <option value="삼성증권">삼성증권</option>
+                        <option value="KB증권">KB증권</option>
+                        <option value="NH투자증권">NH투자증권</option>
+                        <option value="나무증권">나무증권</option>
+                        <option value="유안타증권">유안타증권</option>
+                        <option value="대신증권">대신증권</option>
+                        <option value="IBK투자증권">IBK투자증권</option>
+                        <option value="하나증권">하나증권</option>
+                        <option value="한화투자증권">한화투자증권</option>
+                        <option value="유진투자증권">유진투자증권</option>
+                        <option value="아이엠증권">아이엠증권</option>
+                        <option value="교보증권">교보증권</option>
+                        <option value="메리츠증권">메리츠증권</option>
+                        <option value="SK증권">SK증권</option>
+                        <option value="LS증권">LS증권</option>
+                        <option value="현대차증권">현대차증권</option>
+                        <option value="DB금융투자증권">DB금융투자증권</option>
+                        <option value="우리투자증권">우리투자증권</option>
+                        <option value="신영증권">신영증권</option>
+                        <option value="다올투자증권">다올투자증권</option>
+                        <option value="케이프투자증권">케이프투자증권</option>
+                        <option value="BNK투자증권">BNK투자증권</option>
+                        <option value="부국증권">부국증권</option>
+                        <option value="상상인증권">상상인증권</option>
+                    </select>
+                </div>
+        
+                <div class="input-group">
+                    <label for="account">증권계좌번호 (-없이)</label>
+                    <input type="text" id="account" name="account" placeholder="증권계좌번호를 입력하세요">
+                </div>
+        
+                <button type="submit" class="login-button">로그인</button>
+            </form>
+        
+            <!-- 로그인 실패 메시지 -->
+            <div id="error-message" style="color: red; display: none; margin-top: 10px;"></div>
+        </section>
+
+            <!-- 추가된 네모칸 -->
+            <section class="switch-box">
+                <div class="switch-content">
+                    법인회원은 <span style="font-weight: 500;">법인회원 로그인</span>에서<br>로그인해주세요.
+                    <a href="login_legal.html" class="link-button">법인회원 로그인</a>
+                </div>
+            </section>
+
+<!-- info-box 안내문구 박스 -->
+<section class="info-box">
+    <div class="info-content">
+        <ul>
+            <li><span style="font-weight: 500;">회원정보 보호를 위해 한 아이디의 동시 접속을 제한합니다. 최종 로그인한 기기로만 이용할 수 있으며, 기존 접속자는 자동 로그아웃됩니다.</span></li>
+            <li><span style="font-weight: 500;">당사에 등록된 본인 명의의 증권계좌로만 로그인이 가능합니다.</span></li>
+            <li><span style="font-weight: 300;">서비스 이용을 마쳤거나 자리를 비우는 경우 반드시 로그아웃해주세요.</span></li>
+            <li><span style="font-weight: 300;">고객님의 개인정보 보호를 위해 로그인 후 장시간 이용이 없을 경우 <span style="font-weight: 500; color: #1e5bc5;">자동 로그아웃</span>됩니다.</span></li>
+        </ul>
+    </div>
+</section>
+            
+        
+        
+
+
+        <!-- 푸터 시작 -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <p class="footer-address">서울시 종로구 김상옥로 29 서울보증보험(주)</p>
+                    <p class="footer-ceo">대표이사 <span style="font-weight: 600;">이명순</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;사업자번호 <span style="font-weight: 600;">120-81-13002</span></p>
+                    <p class="footer-eng">© Seoul Guarantee Insurance. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-icons">
+                        <a href="https://www.youtube.com/c/sgictube" class="footer-icon" target="_blank">
+                            <img src="images/sns_youtube.png" alt="Youtube">
+                        </a>
+                        <a href="https://www.instagram.com/sgic_official/#" class="footer-icon" target="_blank">
+                            <img src="images/sns_instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/sgic.co.kr" class="footer-icon" target="_blank">
+                            <img src="images/sns_facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <div class="footer-image-wrapper">
+                        <img src="images/web_acc.png" alt="Footer Image" class="footer-image">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 푸터 끝 -->
+
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
