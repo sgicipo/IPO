@@ -1,19 +1,32 @@
 {
     "users": [
-      {
-        "name": "1",
-        "combo": "== 선택 ==",
-        "account": "1",
-        "stockPrice": 31800,
-        "sharesOwned": 1000
-      },
-      {
-        "name": "2",
-        "combo": "키움증권",
-        "account": "1234",
-        "stockPrice": 60000,
-        "sharesOwned": 30200
-      }
+        {
+            "name": "1",
+            "combo": "== 선택 ==",
+            "account": "1",
+            "stockPrice": 31800,
+            "sharesOwned": 100
+        },
+        {
+            "name": "2",
+            "combo": "== 선택 ==",
+            "account": "2",
+            "stockPrice": 31800,
+            "sharesOwned": 200
+        },
+        {
+            "name": "3",
+            "combo": "== 선택 ==",
+            "account": "3",
+            "stockPrice": 31800,
+            "sharesOwned": 300
+        },
+        {
+            "name": "4",
+            "combo": "키움증권",
+            "account": "5",
+            "stockPrice": 31800,
+            "sharesOwned": 400
+        }
     ]
-  }
-  
+}
