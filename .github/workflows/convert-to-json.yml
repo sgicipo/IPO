@@ -3,18 +3,16 @@ name: Convert to JSON
 on:
   push:
     paths:
-      - "data_raw.txt"  # data_raw.txt 파일이 변경될 때마다 실행
+      - "data_raw.txt"
 
 jobs:
   convert:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 저장소 체크아웃
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. data_raw.txt를 JSON으로 변환하는 Python 스크립트 생성 및 실행
       - name: Convert data_raw.txt to data.json
         run: |
           echo 'import json' > convert.py
@@ -43,14 +41,16 @@ jobs:
           echo '    json.dump(result, f, ensure_ascii=False, indent=4)' >> convert.py
           python3 convert.py
 
-      # 3. 변경된 data.json 파일을 커밋 및 푸시 (인증을 위해 GH_TOKEN 사용)
-      - name: Commit and push changes
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Commit changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
           git add data.json
           git commit -m "Auto-converted data_raw.txt to JSON" || echo "No changes to commit"
+
+      - name: Push changes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
           git push origin HEAD:main
