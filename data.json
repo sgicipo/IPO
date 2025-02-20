@@ -8,25 +8,25 @@
             "sharesOwned": 100
         },
         {
-            "name": "2",
-            "combo": "== 선택 ==",
-            "account": "2",
+            "name": "김후이",
+            "combo": "토스증권",
+            "account": "55554444000",
             "stockPrice": 31800,
-            "sharesOwned": 200
+            "sharesOwned": 101
         },
         {
-            "name": "3",
-            "combo": "== 선택 ==",
-            "account": "3",
+            "name": "구경모",
+            "combo": "NH투자증권",
+            "account": "204012376937",
             "stockPrice": 31800,
-            "sharesOwned": 300
+            "sharesOwned": 3000
         },
         {
-            "name": "4",
-            "combo": "키움증권",
-            "account": "5",
+            "name": "호은환",
+            "combo": "KB증권",
+            "account": "25250519901",
             "stockPrice": 31800,
-            "sharesOwned": 400
+            "sharesOwned": 5
         }
     ]
 }
