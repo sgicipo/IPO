@@ -31,10 +31,10 @@ jobs:
           python3 convert.py
 
       # 3. 결과 커밋
-      - name: Commit JSON
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+      - name: Push changes
+  run: |
+    git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+    git push origin main
           git add data.json
           git commit -m "Auto-converted data_raw.txt to JSON"
           git push
