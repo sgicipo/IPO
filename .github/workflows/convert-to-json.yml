@@ -1,0 +1,40 @@
+name: Convert to JSON
+
+on:
+  push:
+    paths:
+      - "data_raw.txt"  # 입력 파일이 변경될 때만 실행
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 저장소 체크아웃
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. JSON 변환 스크립트 실행
+      - name: Convert data to JSON
+        run: |
+          # Python으로 변환 작업 수행
+          echo 'import json' > convert.py
+          echo 'result = {"users": []}' >> convert.py  # "users" 키 추가
+          echo 'with open("data_raw.txt", "r", encoding="utf-8") as f:' >> convert.py
+          echo '    for line in f:' >> convert.py
+          echo '        # 쉼표 뒤 주석 부분 제거' >> convert.py
+          echo '        main_data = line.split(",", 4)[:4]  # 필요한 4개의 필드만 추출' >> convert.py
+          echo '        name, combo, account, sharesOwned = [field.strip() for field in main_data]' >> convert.py
+          echo '        result["users"].append({"name": name, "combo": combo, "account": account, "stockPrice": 61900, "sharesOwned": int(sharesOwned)})' >> convert.py
+          echo 'with open("data.json", "w", encoding="utf-8") as f:' >> convert.py
+          echo '    json.dump(result, f, ensure_ascii=False, indent=4)' >> convert.py
+          python3 convert.py
+
+      # 3. 결과 커밋
+      - name: Commit JSON
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data.json
+          git commit -m "Auto-converted data_raw.txt to JSON"
+          git push
