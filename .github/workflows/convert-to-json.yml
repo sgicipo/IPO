@@ -3,7 +3,7 @@ name: Convert to JSON
 on:
   push:
     paths:
-      - "data_raw.txt"  # 입력 파일이 변경될 때만 실행
+      - "data_raw.txt"  # data_raw.txt 파일이 변경될 때마다 실행
 
 jobs:
   convert:
@@ -14,27 +14,43 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. JSON 변환 스크립트 실행
-      - name: Convert data to JSON
+      # 2. data_raw.txt를 JSON으로 변환하는 Python 스크립트 생성 및 실행
+      - name: Convert data_raw.txt to data.json
         run: |
-          # Python으로 변환 작업 수행
           echo 'import json' > convert.py
-          echo 'result = {"users": []}' >> convert.py  # "users" 키 추가
+          echo 'result = {"users": []}' >> convert.py
           echo 'with open("data_raw.txt", "r", encoding="utf-8") as f:' >> convert.py
           echo '    for line in f:' >> convert.py
-          echo '        # 쉼표 뒤 주석 부분 제거' >> convert.py
-          echo '        main_data = line.split(",", 4)[:4]  # 필요한 4개의 필드만 추출' >> convert.py
-          echo '        name, combo, account, sharesOwned = [field.strip() for field in main_data]' >> convert.py
-          echo '        result["users"].append({"name": name, "combo": combo, "account": account, "stockPrice": 61900, "sharesOwned": int(sharesOwned)})' >> convert.py
+          echo '        line = line.strip()' >> convert.py
+          echo '        if not line:' >> convert.py
+          echo '            continue' >> convert.py
+          echo '        tokens = [token.strip() for token in line.split(",")]' >> convert.py
+          echo '        try:' >> convert.py
+          echo '            name = tokens[0]' >> convert.py
+          echo '            combo = tokens[1]' >> convert.py
+          echo '            account = tokens[2]' >> convert.py
+          echo '            sharesOwned = int(tokens[3])' >> convert.py
+          echo '        except Exception as e:' >> convert.py
+          echo '            continue' >> convert.py
+          echo '        result["users"].append({' >> convert.py
+          echo '            "name": name,' >> convert.py
+          echo '            "combo": combo,' >> convert.py
+          echo '            "account": account,' >> convert.py
+          echo '            "stockPrice": 31800,' >> convert.py
+          echo '            "sharesOwned": sharesOwned' >> convert.py
+          echo '        })' >> convert.py
           echo 'with open("data.json", "w", encoding="utf-8") as f:' >> convert.py
           echo '    json.dump(result, f, ensure_ascii=False, indent=4)' >> convert.py
           python3 convert.py
 
-      # 3. 결과 커밋
-      - name: Push changes
-  run: |
-    git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
-    git push origin main
+      # 3. 변경된 data.json 파일을 커밋 및 푸시 (인증을 위해 GH_TOKEN 사용)
+      - name: Commit and push changes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
           git add data.json
-          git commit -m "Auto-converted data_raw.txt to JSON"
-          git push
+          git commit -m "Auto-converted data_raw.txt to JSON" || echo "No changes to commit"
+          git push origin HEAD:main
