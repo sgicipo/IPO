@@ -160,6 +160,27 @@
             "account": "46372525",
             "stockPrice": 31800,
             "sharesOwned": 5
+        },
+        {
+            "name": "정규원",
+            "combo": "신한투자증권",
+            "account": "8350395710",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김광웅",
+            "combo": "NH투자증권",
+            "account": "20001347455",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "이천희",
+            "combo": "KB증권",
+            "account": "25612515601",
+            "stockPrice": 31800,
+            "sharesOwned": 5
         }
     ]
 }
