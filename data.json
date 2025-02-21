@@ -69,6 +69,41 @@
             "account": "59358384",
             "stockPrice": 31800,
             "sharesOwned": 555
+        },
+        {
+            "name": "정석원",
+            "combo": "키움증권",
+            "account": "5670480410",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김형욱",
+            "combo": "키움증권",
+            "account": "51228705",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김균주",
+            "combo": "미래에셋증권",
+            "account": "010743250100",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "장해용",
+            "combo": "키움증권",
+            "account": "51693600",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "호은환",
+            "combo": "KB증권",
+            "account": "25250519901",
+            "stockPrice": 31800,
+            "sharesOwned": 5
         }
     ]
 }
