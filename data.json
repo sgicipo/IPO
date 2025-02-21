@@ -27,6 +27,48 @@
             "account": "25250519901",
             "stockPrice": 31800,
             "sharesOwned": 5
+        },
+        {
+            "name": "조기곤",
+            "combo": "유안타증권",
+            "account": "329423800117",
+            "stockPrice": 31800,
+            "sharesOwned": 25
+        },
+        {
+            "name": "신흥수",
+            "combo": "토스증권",
+            "account": "1790160855",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "한정민",
+            "combo": "하나증권",
+            "account": "27058371110",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "백희태",
+            "combo": "나무증권",
+            "account": "20501557869",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "배종윤",
+            "combo": "삼성증권",
+            "account": "713453500501",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김은자",
+            "combo": "키움증권",
+            "account": "59358384",
+            "stockPrice": 31800,
+            "sharesOwned": 555
         }
     ]
 }
