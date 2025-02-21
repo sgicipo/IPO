@@ -155,6 +155,27 @@
             "sharesOwned": 5
         },
         {
+            "name": "김은중",
+            "combo": "나무증권",
+            "account": "20401918208",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김지연",
+            "combo": "키움증권",
+            "account": "40171112",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "이섭원",
+            "combo": "NH투자증권",
+            "account": "20401237693",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
             "name": "★5팀★서혜인",
             "combo": "1",
             "account": "1",
