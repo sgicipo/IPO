@@ -29,6 +29,13 @@
             "sharesOwned": 5
         },
         {
+            "name": "★4팀★구경모(김말숙)",
+            "combo": "1",
+            "account": "1",
+            "stockPrice": 31800,
+            "sharesOwned": 1
+        },
+        {
             "name": "조기곤",
             "combo": "유안타증권",
             "account": "329423800117",
@@ -62,6 +69,13 @@
             "account": "713453500501",
             "stockPrice": 31800,
             "sharesOwned": 5
+        },
+        {
+            "name": "★5팀★서혜인",
+            "combo": "1",
+            "account": "1",
+            "stockPrice": 31800,
+            "sharesOwned": 1
         },
         {
             "name": "김은자",
