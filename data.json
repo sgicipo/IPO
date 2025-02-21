@@ -146,6 +146,13 @@
             "account": "714963035414",
             "stockPrice": 31800,
             "sharesOwned": 5
+        },
+        {
+            "name": "유승광",
+            "combo": "키움증권",
+            "account": "50978601",
+            "stockPrice": 31800,
+            "sharesOwned": 5
         }
     ]
 }
