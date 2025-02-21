@@ -153,6 +153,13 @@
             "account": "50978601",
             "stockPrice": 31800,
             "sharesOwned": 5
+        },
+        {
+            "name": "서원석",
+            "combo": "키움증권",
+            "account": "46372525",
+            "stockPrice": 31800,
+            "sharesOwned": 5
         }
     ]
 }
