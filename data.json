@@ -43,6 +43,118 @@
             "sharesOwned": 3335
         },
         {
+            "name": "★1팀★막내",
+            "combo": "1",
+            "account": "1",
+            "stockPrice": 31800,
+            "sharesOwned": 1
+        },
+        {
+            "name": "이은찬",
+            "combo": "KB증권",
+            "account": "27659499002",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "최병환",
+            "combo": "카카오페이증권",
+            "account": "02009525217",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김영록",
+            "combo": "미래에셋증권",
+            "account": "568044873080",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김선민",
+            "combo": "현대차증권",
+            "account": "1833529611",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "방영일",
+            "combo": "키움증권",
+            "account": "51977217",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "문용대",
+            "combo": "토스증권",
+            "account": "128010284231",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "설경훈",
+            "combo": "키움증권",
+            "account": "5059948911",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김영준",
+            "combo": "삼성증권",
+            "account": "708498237301",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "전장환",
+            "combo": "미래에셋증권",
+            "account": "01499013501",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "임성묵",
+            "combo": "토스증권",
+            "account": "15101029776",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "서인교",
+            "combo": "키움증권",
+            "account": "61816770",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "정만춘",
+            "combo": "미래에셋증권",
+            "account": "097225058649",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "조석열",
+            "combo": "유안타증권",
+            "account": "08301119580",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "이재길",
+            "combo": "한국투자증권",
+            "account": "8129315101",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "이장윤",
+            "combo": "키움증권",
+            "account": "61432534",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
             "name": "★1팀★이승우",
             "combo": "1",
             "account": "1",
