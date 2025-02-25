@@ -323,6 +323,20 @@
             "sharesOwned": 5
         },
         {
+            "name": "조인회",
+            "combo": "카카오페이증권",
+            "account": "02007180048",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김태득",
+            "combo": "미래에셋증권",
+            "account": "328682014400",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
             "name": "★5팀★서혜인",
             "combo": "1",
             "account": "1",
