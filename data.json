@@ -253,6 +253,20 @@
             "sharesOwned": 5
         },
         {
+            "name": "김덕환",
+            "combo": "삼성증권",
+            "account": "707791945501",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
+            "name": "김철민",
+            "combo": "신한투자증권",
+            "account": "08312579384",
+            "stockPrice": 31800,
+            "sharesOwned": 5
+        },
+        {
             "name": "★1팀★박철우(서민성)",
             "combo": "1",
             "account": "1",
