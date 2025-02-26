@@ -664,6 +664,13 @@
             "account": "25612515601",
             "stockPrice": 31800,
             "sharesOwned": 5
+        },
+        {
+            "name": "이영승",
+            "combo": "키움증권",
+            "account": "59199226",
+            "stockPrice": 31800,
+            "sharesOwned": 5
         }
     ]
 }
