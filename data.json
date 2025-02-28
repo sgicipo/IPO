@@ -183,6 +183,13 @@
             "sharesOwned": 5
         },
         {
+            "name": "이남길",
+            "combo": "신한투자증권",
+            "account": "10511145012",
+            "stockPrice": 31800,
+            "sharesOwned": 600
+        },
+        {
             "name": "★1팀★김아영",
             "combo": "1",
             "account": "1",
@@ -236,7 +243,7 @@
             "combo": "KB증권",
             "account": "32237193301",
             "stockPrice": 31800,
-            "sharesOwned": 5
+            "sharesOwned": 10
         },
         {
             "name": "유채규",
@@ -450,8 +457,8 @@
         },
         {
             "name": "황규수",
-            "combo": "미래에셋증권",
-            "account": "103225112848",
+            "combo": "NH투자증권",
+            "account": "302199041622",
             "stockPrice": 31800,
             "sharesOwned": 25
         },
